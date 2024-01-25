@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+
+message User {
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+};
+
+message UserRequest {
+    repeated User users = 1;
+}
+
+message UserResponse{
+    repeated User users = 1;
+}
+
+
+
+service UserService {
+    rpc GetUsers(UserRequest) returns (UserResponse){};
+    rpc GetUsersServerStream(UserRequest) returns (stream UserResponse){};
+    rpc SendUsersClientStream(stream User) returns (UserResponse){};
+}
