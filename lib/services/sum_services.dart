@@ -1,5 +1,5 @@
 import 'package:grpc/grpc.dart';
-import 'package:grpc_dart_me/src/generated/sum.pbgrpc.dart';
+import 'package:grpc_dart_me/generated/sum.pbgrpc.dart';
 
 class SumServices extends SumServiceBase {
   @override

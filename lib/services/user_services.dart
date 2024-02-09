@@ -1,5 +1,5 @@
 import 'package:grpc/grpc.dart';
-import 'package:grpc_dart_me/src/generated/user/user.pbgrpc.dart';
+import 'package:grpc_dart_me/generated/user/user.pbgrpc.dart';
 
 class UserServices extends UserServiceBase {
   @override
